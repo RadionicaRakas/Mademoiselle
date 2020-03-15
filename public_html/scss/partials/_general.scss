@@ -1,0 +1,49 @@
+$default-font: $lato;
+
+
+img{
+    max-width: 100%;
+}
+
+html{
+    font-size: 10px; // 1 rem
+}
+
+body{
+    font-family: $default-font;
+   font-weight: $font-weight-normal;
+}
+
+
+p{
+    font-weight: $font-weight-light;
+
+    line-height: 2.6rem;
+    font-size: 1.8rem;
+    .lead-p{
+        line-height: 2.8rem;
+        font-size: 2rem;
+    }
+}
+
+h1, .h1{
+    font-family: $bodoni;
+    color: $white;
+    font-size: 6rem;
+    //font-weight: $font-weight-light;
+    
+    line-height: 8.4rem;
+}
+
+h2,.h2{
+    font-family: $bodoni;
+    color: $gray-900;
+    font-size: 3rem;
+   //font-weight: $font-weight-light;
+    
+    line-height: 4.5rem;
+}
+
+h3,.h3{
+    text-transform: uppercase;
+}
