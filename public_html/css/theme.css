@@ -12456,8 +12456,6 @@ p .lead-p {
 h1, .h1 {
   font-family: "BodoniSvtyTwoITCTT-Book";
   color: #fff;
-  font-size: 6rem;
-  line-height: 8.4rem;
 }
 
 h2, .h2 {
@@ -12540,6 +12538,66 @@ nav .navbar-nav a {
 
 .navbar-toggler[aria-expanded='true'] span:nth-of-type(3) {
   transform: translateY(0.6rem);
+}
+
+.lead-page-section {
+  padding: 1rem 0 1rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.lead-page-section h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+@media (min-width: 450px) {
+  .lead-page-section {
+    padding: 5rem 0 5rem;
+  }
+  .lead-page-section h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .lead-page-section {
+    padding: 8rem 0 8rem;
+  }
+  .lead-page-section h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+    letter-spacing: 0.8rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .lead-page-section {
+    padding: 10rem 0 10rem;
+  }
+  .lead-page-section h1 {
+    font-size: 5.5rem;
+    line-height: 7rem;
+    letter-spacing: 1.2rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .lead-page-section {
+    padding: 15rem 0 15rem;
+  }
+  .lead-page-section h1 {
+    font-size: 6rem;
+    line-height: 8.4rem;
+    letter-spacing: 2rem;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
