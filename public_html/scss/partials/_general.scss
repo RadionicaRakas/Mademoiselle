@@ -11,7 +11,7 @@ html{
 
 body{
     font-family: $default-font;
-   font-weight: $font-weight-normal;
+    font-weight: $font-weight-normal;
 }
 
 
@@ -29,18 +29,26 @@ p{
 h1, .h1{
     font-family: $bodoni;
     color: $white;
-    
+
 }
 
 h2,.h2{
+    text-transform: uppercase;
+    padding-left: 0;
     font-family: $bodoni;
     color: $gray-900;
-    font-size: 3rem;
-   //font-weight: $font-weight-light;
-    
-    line-height: 4.5rem;
+
 }
 
 h3,.h3{
     text-transform: uppercase;
+}
+
+a{
+    color: $gray-900;
+    text-decoration: none;
+    &:hover{
+        color: $gray-900;
+        text-decoration: none;
+    }
 }

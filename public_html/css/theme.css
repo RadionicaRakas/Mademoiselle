@@ -543,8 +543,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -569,8 +569,8 @@ pre code {
 
 .container-fluid, .container-md, .container-lg, .container-xl {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -596,8 +596,8 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -0.7rem;
+  margin-left: -0.7rem;
 }
 
 .no-gutters {
@@ -620,8 +620,8 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
 }
 
 .col {
@@ -4752,26 +4752,26 @@ input[type="button"].btn-block {
 }
 
 .card-deck .card {
-  margin-bottom: 15px;
+  margin-bottom: 0.7rem;
 }
 
 @media (min-width: 576px) {
   .card-deck {
     display: flex;
     flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -0.7rem;
+    margin-left: -0.7rem;
   }
   .card-deck .card {
     flex: 1 0 0%;
-    margin-right: 15px;
+    margin-right: 0.7rem;
     margin-bottom: 0;
-    margin-left: 15px;
+    margin-left: 0.7rem;
   }
 }
 
 .card-group > .card {
-  margin-bottom: 15px;
+  margin-bottom: 0.7rem;
 }
 
 @media (min-width: 576px) {
@@ -12459,14 +12459,24 @@ h1, .h1 {
 }
 
 h2, .h2 {
+  text-transform: uppercase;
+  padding-left: 0;
   font-family: "BodoniSvtyTwoITCTT-Book";
   color: #1E1E1E;
-  font-size: 3rem;
-  line-height: 4.5rem;
 }
 
 h3, .h3 {
   text-transform: uppercase;
+}
+
+a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1E1E1E;
+  text-decoration: none;
 }
 
 nav .navbar-brand img {
@@ -12542,7 +12552,7 @@ nav .navbar-nav a {
 
 .lead-page-section {
   padding: 1rem 0 1rem;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -12597,6 +12607,77 @@ nav .navbar-nav a {
     line-height: 8.4rem;
     letter-spacing: 2rem;
     text-align: center;
+  }
+}
+
+.beauty-trends .section-title {
+  text-align: left;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  letter-spacing: 0.3rem;
+  padding: 2rem 0 2rem;
+}
+
+.beauty-trends .blog-img {
+  margin-bottom: 12rem;
+}
+
+.beauty-trends .blog-content {
+  background-color: #fff;
+  padding: 2.2rem 1.8rem 3rem 1.8rem;
+  top: 70%;
+  left: 1.4rem;
+  right: 1.4rem;
+}
+
+.beauty-trends .blog-content .blog-date {
+  font-family: "BodoniSvtyTwoITCTT-Book";
+  font-size: 1.4rem;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  line-height: 1.7rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.beauty-trends .blog-content .blog-text {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (min-width: 450px) {
+  .beauty-trends .section-title {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.34rem;
+    padding: 2.2rem 0 2.2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .beauty-trends .section-title {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    letter-spacing: 0.4rem;
+    padding: 2.6rem 0 2.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .beauty-trends .section-title {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.5rem;
+    padding: 4rem 0 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .beauty-trends .section-title {
+    padding: 5rem 0 5rem;
   }
 }
 
