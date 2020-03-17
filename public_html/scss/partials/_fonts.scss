@@ -6,7 +6,8 @@ $lato: 'Lato';
 
 @font-face {
   font-family: 'BodoniSvtyTwoITCTT-Book';
-  src: url('fonts/Bodoni/BodoniSvtyTwoITCTT-Book.eot?#iefix') format('embedded-opentype'),  
+  src: local('BodoniSvtyTwoITCTT-Book'),
+       url('fonts/Bodoni/BodoniSvtyTwoITCTT-Book.eot?#iefix') format('embedded-opentype'),  
        url('fonts/Bodoni/BodoniSvtyTwoITCTT-Book.woff') format('woff'), 
        url('fonts/Bodoni/BodoniSvtyTwoITCTT-Book.ttf')  format('truetype'), 
        url('fonts/Bodoni/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book') format('svg');

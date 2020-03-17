@@ -12424,7 +12424,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: 'BodoniSvtyTwoITCTT-Book';
-  src: url("fonts/Bodoni/BodoniSvtyTwoITCTT-Book.eot?#iefix") format("embedded-opentype"), url("fonts/Bodoni/BodoniSvtyTwoITCTT-Book.woff") format("woff"), url("fonts/Bodoni/BodoniSvtyTwoITCTT-Book.ttf") format("truetype"), url("fonts/Bodoni/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book") format("svg");
+  src: local("BodoniSvtyTwoITCTT-Book"), url("fonts/Bodoni/BodoniSvtyTwoITCTT-Book.eot?#iefix") format("embedded-opentype"), url("fonts/Bodoni/BodoniSvtyTwoITCTT-Book.woff") format("woff"), url("fonts/Bodoni/BodoniSvtyTwoITCTT-Book.ttf") format("truetype"), url("fonts/Bodoni/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -12454,14 +12454,14 @@ p .lead-p {
 }
 
 h1, .h1 {
-  font-family: 'BodoniSvtyTwoITCTT-Book';
+  font-family: "BodoniSvtyTwoITCTT-Book";
   color: #fff;
   font-size: 6rem;
   line-height: 8.4rem;
 }
 
 h2, .h2 {
-  font-family: 'BodoniSvtyTwoITCTT-Book';
+  font-family: "BodoniSvtyTwoITCTT-Book";
   color: #1E1E1E;
   font-size: 3rem;
   line-height: 4.5rem;
@@ -12471,20 +12471,75 @@ h3, .h3 {
   text-transform: uppercase;
 }
 
-/*
-    Created on : Mar 14, 2020, 2:27:23 PM
-    Author     : rakas
-*/
-/*.bodoni{
-    color: green;
-    font-family: $bodoni;
-    font-style: italic;
+nav .navbar-brand img {
+  max-height: 2.5rem;
 }
 
-.lato{
-    color: red;
-    font-family: $lato;
-    font-weight: $font-weight-normal;
-}*/
+nav .navbar-nav {
+  background-color: #D0B6B6;
+}
+
+nav .navbar-nav a {
+  text-transform: uppercase;
+  text-align: center;
+  color: #1E1E1E !important;
+}
+
+@media (min-width: 768px) {
+  header .navbar-nav {
+    background-color: #fff;
+  }
+  header .navbar-nav .nav-item {
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  header .navbar-nav .nav-item:hover:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #ECD9D9;
+  }
+}
+
+@media (min-width: 992px) {
+  header .navbar-nav .nav-item {
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .navbar-nav .nav-item {
+    margin-left: 7rem;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  overflow: hidden;
+  margin-top: 0.4rem;
+}
+
+.navbar-toggler span {
+  width: 3.1rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #D0B6B6;
+  margin-bottom: 0.5rem;
+  transition: 0.2s linear;
+  border-radius: 0.2rem;
+}
+
+.navbar-toggler[aria-expanded='true'] span:nth-of-type(1) {
+  transform: translateY(-0.2rem);
+}
+
+.navbar-toggler[aria-expanded='true'] span:nth-of-type(2) {
+  transform: rotate(360deg) translateY(0.2rem);
+}
+
+.navbar-toggler[aria-expanded='true'] span:nth-of-type(3) {
+  transform: translateY(0.6rem);
+}
 
 /*# sourceMappingURL=theme.css.map */
