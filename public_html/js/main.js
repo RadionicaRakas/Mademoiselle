@@ -15,13 +15,13 @@ $(document).ready(function(){
         $('.blog-slider').owlCarousel({
             autoplay: true,
             loop:true,
-            margin: 30,
-            dots:false,
+            margin: 15,
+            dots:true,
             
             responsive:{
                 0: {
                     items: 1,
-                    margin: 0
+                    margin: 10
                },
                 576: {
                     items: 2,
@@ -37,4 +37,23 @@ $(document).ready(function(){
     }
     
     
+    
+    function animation() {
+        var windowHeight = $(window).height();
+        var scroll = $(window).scrollTop();
+        $('.animation').each(function () {
+            let position = $(this).offset().top;
+            let animation = $(this).attr('data-animation');
+            let delay = $(this).attr('data-delay');
+            if (position < scroll + windowHeight - 100) {
+                $(this).css('animation-delay', delay);
+                $(this).addClass(animation);
+            }
+        });
+    }
+    animation();
+    $(window).scroll(function () {
+        animation();
+        animateHeader();
+    });
 });

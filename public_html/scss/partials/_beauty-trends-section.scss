@@ -2,29 +2,35 @@
 $blog-content-color: $white;
 
 
+
 .beauty-trends{
-    .section-title{
-        text-align: left;
-        font-size: 1.8rem;
-        line-height: 2rem;
-        letter-spacing: 0.3rem;
-        padding: 2rem 0 2rem;
-        
-    }
-    
-    .blog-img{
-                margin-bottom: 12rem;
+    .blog-item{
+        overflow: hidden;
+        &:hover{
+            img{
+                transform: scale(1.1);
             }
-            
+        }
+        img{
+            display: block;
+            width: 100%;
+            transition: 0.3s linear;
+        }
+    }
+
+    .blog-img{
+        margin-bottom: 12rem;
+    }
+
     .blog-content{
         background-color: $blog-content-color;
         padding: 2.2rem 1.8rem 3rem 1.8rem;
         top: 70%;
         left:1.4rem;
         right:1.4rem;
-    
-     
-        
+
+
+
         .blog-date{
             font-family: $bodoni;
             font-size: 1.4rem;
@@ -44,13 +50,12 @@ $blog-content-color: $white;
     }
 }
 
-
-
-
-
-
-
-
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 0;
+    .owl-dot span{
+        background: $pink-dark;
+    }
+}
 
 @media(min-width:450px){
     .beauty-trends{
