@@ -76,3 +76,45 @@ a{
     }
 }
 
+@media(min-width:450px){
+    
+        .section-title{
+            font-size: 2.2rem;
+            line-height: 2.8rem;
+            letter-spacing: 0.34rem;
+            padding: 2.2rem 0 2.2rem;
+        }
+    
+
+}
+
+@media(min-width:576px){
+    
+        .section-title{
+            font-size: 2.6rem;
+            line-height: 3rem;
+            letter-spacing: 0.4rem;
+            padding: 2.6rem 0 2.6rem;
+        }
+    
+}
+
+@media(min-width:768px){
+    
+        .section-title{
+            font-size: 3rem;
+            line-height: 4.5rem;
+            letter-spacing: 0.5rem;
+            padding: 4rem 0 4rem;
+        }
+    
+
+}
+
+@media(min-width:992px){
+    
+        .section-title{
+            padding: 5rem 0 5rem;
+        }
+    
+}
