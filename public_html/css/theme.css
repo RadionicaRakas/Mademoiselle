@@ -12889,4 +12889,43 @@ nav .navbar-nav a {
   }
 }
 
+.our-profesionals .section-border {
+  border: 0.1rem solid #ECD9D9;
+}
+
+.our-profesionals .our-profesionals-text {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+
+.our-profesionals .our-profesionals-img {
+  overflow: hidden;
+}
+
+.our-profesionals .our-profesionals-img:hover img {
+  transform: scale(1.2);
+}
+
+.our-profesionals .our-profesionals-img img {
+  display: block;
+  width: 100%;
+  transition: 0.4s linear;
+}
+
+footer .social a {
+  padding: 0 1rem 0 1rem;
+  color: #ECD9D9;
+}
+
+footer .social a:hover {
+  color: #D0B6B6;
+}
+
+footer .copyright {
+  font-size: 1.2rem;
+  line-height: 4.1rem;
+}
+
 /*# sourceMappingURL=theme.css.map */
