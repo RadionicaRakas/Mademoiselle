@@ -1,28 +1,28 @@
-$(document).ready(function(){
-  
+$(document).ready(function () {
+
     function checkHeader() {
         let headerHeight = $('header').innerHeight();
         $('main').css('margin-top', headerHeight);
     }
-    
+
     checkHeader();
     $(window).resize(function () {
         checkHeader();
     });
-    
-    
-    if($('.blog-slider').length > 0){
+
+
+    if ($('.blog-slider').length > 0) {
         $('.blog-slider').owlCarousel({
             autoplay: true,
-            loop:true,
+            loop: true,
             margin: 15,
-            dots:true,
-            
-            responsive:{
+            dots: true,
+
+            responsive: {
                 0: {
                     items: 1,
                     margin: 10
-               },
+                },
                 576: {
                     items: 2,
                     slideBy: 2
@@ -31,13 +31,32 @@ $(document).ready(function(){
                     items: 3,
                     slideBy: 3
                 }
-                
+
+            }
+        });
+    }
+
+    if ($('.blog-slider-about').length > 0) {
+        $('.blog-slider-about').owlCarousel({
+            autoplay: true,
+            loop: true,
+            margin: 15,
+            dots: false,
+
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 10    
+                }
+
             }
         });
     }
     
-    
-    
+       
+
+
+
     function animation() {
         var windowHeight = $(window).height();
         var scroll = $(window).scrollTop();

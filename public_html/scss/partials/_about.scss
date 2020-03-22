@@ -1,0 +1,55 @@
+
+.about-lead{
+    margin-bottom: 5rem;
+}
+
+.about-section{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .about-content{
+        margin-bottom: 6rem;
+        h3{
+            margin-bottom: 2rem;
+        }
+        p{
+            text-align: justify;
+            margin-bottom: 2rem;
+        }
+        img{
+            margin-bottom: 2rem;
+        }
+        
+    }
+    .aside-content{
+        .search{
+            border:0.1rem solid $gray-900;
+            margin-bottom: 4rem;
+            display: block;
+            .zoom-img{
+                max-height: 40%;
+                top: 25%;
+                bottom: 25%;
+                right:1rem;
+
+            }
+
+            .form-control{
+                border: none;
+                font-family: $bodoni;
+                font-style: italic !important;
+                
+            }
+        }
+    }
+
+}
+.blog-item{
+    margin-bottom: 10rem;
+    .blog-content-about{
+        background-color: $blog-content-color;
+        padding: 2.2rem 1.8rem 3rem 1.8rem;
+        top: 70%;
+        left:1.4rem;
+        right:1.4rem;
+    }
+}

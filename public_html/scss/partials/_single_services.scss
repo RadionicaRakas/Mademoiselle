@@ -1,0 +1,49 @@
+
+.single-service{
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    .single-service-img{
+        margin-bottom: 2rem;
+    }
+    .single-service-content{
+        padding: 0 2rem;
+        h3{
+            margin-bottom: 1rem;
+        }
+        p{
+            text-align: justify;
+
+        }
+    }
+}
+
+@media(min-width:576px){
+    .single-service{
+        padding-top: 4rem;
+    .single-service-content{  
+        h3{
+            margin-bottom: 1rem;
+        }
+        p{
+            text-align: left;
+        }
+    }
+    }
+}
+
+
+
+
+@media(min-width:768px){
+
+}
+
+@media(min-width:992px){
+    .single-service{
+        padding-top: 6rem;
+    }
+}
+
+@media(min-width:1200px){
+
+}

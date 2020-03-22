@@ -1,0 +1,126 @@
+$pagination-a-active: $pink-dark;
+$pagination-a-hover: $gray-light;
+
+.blog-lead{
+    margin-bottom: 5rem;
+}
+.blog-articles{
+    .blog-item{
+        overflow: hidden;
+        margin-bottom: 2rem;
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        img{
+            display: block;
+            width: 100%;
+            transition: 0.3s linear;
+        }
+    }
+
+    .blog-img{
+        margin-bottom: 10rem;
+    }
+
+    .blog-content{
+        background-color: $blog-content-color;
+        padding: 2.2rem 1.8rem 3rem 1.8rem;
+        top: 70%;
+        left:1.4rem;
+        right:1.4rem;
+        .blog-date{
+            font-family: $bodoni;
+            font-size: 1.4rem;
+            font-style: italic;
+            letter-spacing: 0.1rem;
+            line-height: 1.7rem;
+            text-align: center;
+            text-decoration: none;      
+        }
+        .blog-text{
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            text-align: center;
+            font-weight: 400;
+        }
+    }
+}
+
+.pagination {
+    display: block;
+    font-family: $bodoni;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+.pagination a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+.pagination a.active {
+    background-color: $pink-dark;
+    color: white;
+}
+
+.pagination a:hover:not(.active){
+    background-color: $gray-light;
+}
+
+@media(min-width:450px){
+    .blog-articles{
+        .blog-item{
+            .blog-content{
+
+                .blog-text{
+                    font-size: 1.3rem;
+                    line-height: 2.1rem;    
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:576px){
+    .blog-articles{
+        .blog-item{
+
+            .blog-text{
+                font-size: 1.4rem;
+                line-height: 2.2rem;    
+            }
+        }
+    }
+}
+
+@media(min-width:768px){
+    .blog-articles{
+        .blog-item{
+            margin-bottom: 3rem;
+            .blog-text{
+                font-size: 1.6rem;
+                line-height: 2.4rem;    
+            }
+        }
+    }
+}
+
+@media(min-width:992px){
+
+}
+
+@media(min-width:1200px){
+    .blog-articles{
+        .blog-item{
+            margin-bottom: 0;    
+        }
+    }
+}
