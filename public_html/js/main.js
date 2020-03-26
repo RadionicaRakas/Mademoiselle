@@ -53,7 +53,14 @@ $(document).ready(function () {
         });
     }
     
-       
+       if ($('.profesionals-slider').length > 0) {
+        $('.profesionals-slider').owlCarousel({
+            loop: true,
+            margin: 15,
+            dots:true,
+            items: 1
+        });
+    }
 
 
 
@@ -75,4 +82,74 @@ $(document).ready(function () {
         animation();
         animateHeader();
     });
+
+
+    if ($('.contact-form').length > 0) {
+
+        //FORM VALIDATION
+        $(function () {
+            $(".contact-form").validate({
+                highlight: function (element) {
+                    $(element).addClass("is-invalid").removeClass("is-valid");
+                },
+                unhighlight: function (element) {
+                    $(element).removeClass('is-invalid').addClass('is-valid');
+                },
+                rules: {
+                    name: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    subject: {
+                        required: true
+                    },
+                    message: {
+                        required: true
+                    }
+
+
+                },
+                messages: {
+
+                    name: {
+                        required: 'Name and surname* is required field.'
+                    },
+                    email: {
+                        required: 'Email address* is required field.',
+                        email: 'Please provide a valid Email address.'
+                    },
+                    subject: {
+                        required: 'Subject* is required field.'
+                    },
+                    message: {
+                        required: 'The Message* is required field.'
+                    }
+
+
+
+                },
+                errorElement: 'p',
+                errorPlacement: function (error, element) {
+                    error.appendTo($(element).closest('.form-group').find('.invalid-feedback'));
+                }
+
+            });
+        });
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

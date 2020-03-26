@@ -29,8 +29,6 @@ $blog-content-color: $white;
         left:1.4rem;
         right:1.4rem;
 
-
-
         .blog-date{
             font-family: $bodoni;
             font-size: 1.4rem;
@@ -89,7 +87,6 @@ $blog-content-color: $white;
             padding: 4rem 0 4rem;
         }
     }
-
 }
 
 @media(min-width:992px){
@@ -98,8 +95,4 @@ $blog-content-color: $white;
             padding: 5rem 0 5rem;
         }
     }
-}
-
-@media(min-width:1200px){
-
 }

@@ -5,18 +5,16 @@ $social-icon-color-hover: $pink-dark;
 footer{
     .social{
         a{
-        padding:0 1rem 0 1rem;    
-        color: $social-icon-color;
-        &:hover{
-            color: $social-icon-color-hover;
-        }
-        }
-        
+            padding:0 1rem 0 1rem;    
+            color: $social-icon-color;
+            &:hover{
+                color: $social-icon-color-hover;
+            }
+        }   
     }
-    
+
     .copyright{
         font-size: 1.2rem;
-        //letter-spacing: ;
         line-height: 4.1rem;
     }
 }

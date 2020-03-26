@@ -2,8 +2,6 @@ $header-main-color: $pink-dark;
 $header-after-color: $pink-light;
 
 nav{
-
-
     .navbar-brand{
         img{
             max-height: 2.5rem;
@@ -15,9 +13,7 @@ nav{
             text-transform: uppercase;
             text-align: center;
             color: $gray-900 !important;
-
         }
-
     }
 }
 

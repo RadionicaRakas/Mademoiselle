@@ -1,0 +1,22 @@
+$btn-border-color: $white;
+$btn-text-color: $white;
+
+h1.animation{
+    margin-bottom: 3rem;
+}
+
+.btn-404{
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.7rem;
+    padding: 1.4rem 3rem;
+    display: block;
+    color: $white;
+    border-radius: 0;
+    margin: 0 auto;
+    border: 0.1rem solid $white;
+    width: max-content;
+    &:hover{
+        background-color: rgba(0,0,0,0.3);
+    }  
+}

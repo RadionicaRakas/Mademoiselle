@@ -13286,4 +13286,146 @@ footer .copyright {
   }
 }
 
-/*# sourceMappingURL=theme.css.map */
+h1.animation {
+  margin-bottom: 3rem;
+}
+
+.btn-404 {
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.7rem;
+  padding: 1.4rem 3rem;
+  display: block;
+  color: #fff;
+  border-radius: 0;
+  margin: 0 auto;
+  border: 0.1rem solid #fff;
+  width: max-content;
+}
+
+.btn-404:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-section {
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact-section .contact-heading {
+  font-family: "BodoniSvtyTwoITCTT-Book";
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  line-height: 2.2rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.contact-section .contact-form .btn-contact {
+  font-size: 1.2rem;
+  letter-spacing: 0.04rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  padding: 0.7rem 1.5rem;
+  display: block;
+  border-radius: 0;
+  border: 0.1rem solid;
+  width: max-content;
+}
+
+.contact-section .contact-form .btn-contact:hover {
+  background-color: #ECD9D9;
+}
+
+.contact-section .contact-form .form-group .form-control {
+  border: none;
+  margin-bottom: 4rem;
+}
+
+.contact-section .contact-form .form-group .form-control:active {
+  border-color: #ECD9D9;
+}
+
+.contact-section .contact-form .form-group textarea.form-control {
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  background-color: #ECD9D9;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.contact-info .info-p {
+  font-size: 2rem;
+  letter-spacing: 0;
+  line-height: 2.1rem;
+  text-align: center;
+}
+
+.contact-info .info-link {
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 0;
+  line-height: 2.1rem;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .contact-info {
+    background-color: #ECD9D9;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+    font-weight: 300;
+  }
+  .contact-info .info-p {
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .contact-info .info-link {
+    display: block;
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+    padding-top: 4rem;
+    margin-bottom: 5rem;
+  }
+  .contact-section .contact-heading {
+    font-family: "BodoniSvtyTwoITCTT-Book";
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+  .contact-section .contact-form .btn-contact {
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.7rem;
+    padding: 1.4rem 3rem;
+  }
+  .contact-section .contact-map-wrapper {
+    position: relative;
+    overflow: visible;
+  }
+  .contact-section .contact-map-wrapper .contact-map {
+    position: absolute;
+    left: 20%;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=theme.css.map */.py-sm-2 {
+
+}
