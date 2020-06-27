@@ -12675,7 +12675,7 @@ nav .navbar-nav a {
   }
 }
 
-.beauty-trends .blog-item {
+.beauty-trends .blog-item figure {
   overflow: hidden;
 }
 
@@ -12689,16 +12689,13 @@ nav .navbar-nav a {
   transition: 0.3s linear;
 }
 
-.beauty-trends .blog-img {
-  margin-bottom: 12rem;
-}
-
 .beauty-trends .blog-content {
   background-color: #fff;
   padding: 2.2rem 1.8rem 3rem 1.8rem;
-  top: 70%;
+  top: 100%;
   left: 1.4rem;
   right: 1.4rem;
+  transform: translateY(-50%);
 }
 
 .beauty-trends .blog-content .blog-date {
@@ -12717,6 +12714,8 @@ nav .navbar-nav a {
   line-height: 2.4rem;
   text-align: center;
   font-weight: 400;
+  max-height: 4.8rem;
+  overflow: hidden;
 }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
@@ -12792,19 +12791,11 @@ nav .navbar-nav a {
   transition: 1s linear;
 }
 
-.services-article:nth-of-type(1) .services-content {
+.services-article:nth-of-type(odd) .services-content {
   background-color: #F5F5F5;
 }
 
-.services-article:nth-of-type(2) .services-content {
-  background-color: #ECD9D9;
-}
-
-.services-article:nth-of-type(3) .services-content {
-  background-color: #F5F5F5;
-}
-
-.services-article:nth-of-type(4) .services-content {
+.services-article:nth-of-type(even) .services-content {
   background-color: #ECD9D9;
 }
 
@@ -12836,22 +12827,13 @@ nav .navbar-nav a {
     margin-bottom: 3rem;
     letter-spacing: 0.1rem;
   }
-  .services-article:nth-of-type(1) .services-img {
+  .services-article:nth-of-type(odd) .services-img {
     order: 2;
   }
-  .services-article:nth-of-type(1) .btn-more:hover {
+  .services-article:nth-of-type(odd) .btn-more:hover {
     background-color: #c2c2c2;
   }
-  .services-article:nth-of-type(2) .btn-more:hover {
-    background-color: #ca9595;
-  }
-  .services-article:nth-of-type(3) .services-img {
-    order: 2;
-  }
-  .services-article:nth-of-type(3) .btn-more:hover {
-    background-color: #c2c2c2;
-  }
-  .services-article:nth-of-type(4) .btn-more:hover {
+  .services-article:nth-of-type(even) .btn-more:hover {
     background-color: #ca9595;
   }
   .services-article .services-img {
@@ -13339,6 +13321,7 @@ h1.animation {
 
 .contact-section .contact-form .form-group .form-control {
   border: none;
+  background-color: rgba(37, 61, 97, 0.02);
   margin-bottom: 4rem;
 }
 
@@ -13426,6 +13409,4 @@ h1.animation {
   }
 }
 
-/*# sourceMappingURL=theme.css.map */.py-sm-2 {
-
-}
+/*# sourceMappingURL=theme.css.map */

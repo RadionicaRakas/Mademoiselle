@@ -5,7 +5,9 @@ $blog-content-color: $white;
 
 .beauty-trends{
     .blog-item{
-        overflow: hidden;
+        figure{
+            overflow: hidden;
+        }
         &:hover{
             img{
                 transform: scale(1.1);
@@ -18,16 +20,13 @@ $blog-content-color: $white;
         }
     }
 
-    .blog-img{
-        margin-bottom: 12rem;
-    }
-
     .blog-content{
         background-color: $blog-content-color;
         padding: 2.2rem 1.8rem 3rem 1.8rem;
-        top: 70%;
+        top: 100%;
         left:1.4rem;
         right:1.4rem;
+        transform:translateY(-50%);
 
         .blog-date{
             font-family: $bodoni;
@@ -44,6 +43,8 @@ $blog-content-color: $white;
             line-height: 2.4rem;
             text-align: center;
             font-weight: 400;
+            max-height: 4.8rem;
+            overflow: hidden;
         }
     }
 }

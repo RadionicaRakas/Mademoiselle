@@ -29,7 +29,8 @@ $contact-info-color: $pink-light;
         }
         .form-group{
             .form-control{
-                border: none;
+                border: none;    
+                background-color: rgba(37, 61, 97, 0.02);
                 margin-bottom: 4rem;
                 &:active{
                     border-color: $pink-light;
